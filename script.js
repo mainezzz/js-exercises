@@ -27,7 +27,7 @@ for(var i = 0; i < nom.length; i++){
   }
 }
 
-//FASE 2 (con función para mirar si es vocal o no)
+//FASE 2 BUENA (con función para mirar si es vocal o no)
 
 var nom = ["e", "l", "i", "s", "a", "b", "e", "t"];
 var vocals = ["a", "e", "i", "o", "u"];
