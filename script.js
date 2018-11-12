@@ -27,23 +27,41 @@ for(var i = 0; i < nom.length; i++){
   }
 }
 
+//FASE 2 (con función para mirar si es vocal o no)
+
+var nom = ["e", "l", "i", "s", "a", "b", "e", "t"];
+var vocals = ["a", "e", "i", "o", "u"];
+
+function letras(letter){
+  if(vocals.indexOf(letter) !== -1){
+    console.log(letter + " es una vocal");
+  }
+  else {
+    console.log(letter + " es una consonante");
+  }
+}
+
+for(var i = 0; i < nom.length; i++){
+  letras(nom[i]);
+}
+
 //FASE 2 (extra) - isNaN
 
 
 //FASE 3 (con for)
 
-var nom = ["E", "l", "i", "s", "a", "b", "e", "t"];
+var nom = ["e", "l", "i", "s", "a", "b", "e", "t"];
 var comptadorMap = new Map();
 
 function lletraRepetida(a) {
 
 var comptador = 0;
     for(var i=0; i<nom.length; i++) {
-     if(nom[i]/*.toLowerCase()*/ === a) {
+     if(nom[i] === a) {
         comptador++;
-     } else {
-   }
-     }
+      } else {
+    }
+  }
      return ("La lletra " + a + " està repetida " + comptador + " cop/s");
  }
 
